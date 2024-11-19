@@ -57,10 +57,7 @@ const Hero = () => {
                     </div>
 
             </section>
-            <Whoweare />
-            <Ourproduct/>
-            <Contact />
-            <Faq />
+            
         </>
     );
 };

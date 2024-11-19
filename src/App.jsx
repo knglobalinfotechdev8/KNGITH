@@ -68,11 +68,12 @@
 
 import React, { useState, useEffect, Suspense, lazy } from 'react';
 import { NavbarDemo } from './Components/Common/Nav';
-import { BackgroundBoxes } from './Pages/Home/Bg_hero';
+// import { BackgroundBoxes } from './Pages/Home/Bg_hero';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import WhatsAppButton from './Whatsapp';
 import Footer from './Components/Common/Footer';
 import Preloader from './Components/Common/Preloader copy';
+import { BackgroundBoxes } from './Pages/Home/Bg_hero';
 
 // Lazy-loaded components
 const About = lazy(() => import('./Pages/About/About'));
