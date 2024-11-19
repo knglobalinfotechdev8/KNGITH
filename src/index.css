@@ -1,0 +1,285 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap";
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  font-family: 'Poppins', 'sans-serif';
+}
+
+#our_poduct {
+  z-index: 10 !important;
+}
+
+/* From Uiverse.io by adamgiebl */
+.cssbuttons-io {
+  position: relative;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: black;
+  overflow: hidden;
+}
+
+.cssbuttons-io svg {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+}
+
+.cssbuttons-io span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.cssbuttons-io::before {
+  content: "";
+  background: #fff;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+
+}
+
+.cssbuttons-io:hover::before {
+  transform: translate3d(100%, 0, 0);
+
+
+}
+
+.cssbuttons-io:active {
+  transform: scale(0.95);
+}
+
+
+/* From Uiverse.io by MikeAndrewDesigner */
+.e-card {
+  margin: 100px auto;
+  background: transparent;
+  box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.45);
+  position: relative;
+  width: 240px;
+  height: 330px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  width: 540px;
+  height: 700px;
+  opacity: 0.6;
+  left: 0;
+  top: 0;
+  margin-left: -50%;
+  margin-top: -70%;
+  background: linear-gradient(744deg, #af40ff, #5b42f3 60%, #00ddeb);
+}
+
+.icon {
+  width: 3em;
+  margin-top: -1em;
+  padding-bottom: 1em;
+}
+
+.infotop {
+  text-align: center;
+  font-size: 12px;
+  position: absolute;
+  top: 5.6em;
+  left: 0;
+  right: 0;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 100;
+  position: relative;
+  top: 1em;
+  text-transform: lowercase;
+}
+
+.wave:nth-child(2),
+.wave:nth-child(3) {
+  top: 210px;
+}
+
+.playing .wave {
+  border-radius: 40%;
+  animation: wave 3000ms infinite linear;
+}
+
+.wave {
+  border-radius: 40%;
+  animation: wave 55s infinite linear;
+}
+
+.playing .wave:nth-child(2) {
+  animation-duration: 4000ms;
+}
+
+.wave:nth-child(2) {
+  animation-duration: 50s;
+}
+
+.playing .wave:nth-child(3) {
+  animation-duration: 5000ms;
+}
+
+.wave:nth-child(3) {
+  animation-duration: 45s;
+}
+
+#md_img{
+  filter: drop-shadow(4px 4px 8px rgba(0, 255, 247, 0.5));
+  border: none; /* Ensures no border is applied */
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Container for the gallery */
+/* Container for the gallery */
+.gallery-container {
+  padding: 50px;
+  text-align: center;
+}
+
+/* Title of the gallery */
+.gallery-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Grid layout for gallery items */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+/* Style for each gallery item */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Ensures a square shape */
+  background-color: #f0f0f0; /* Optional: Background for empty spaces */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for gallery image */
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the square without distortion */
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+/* Hover effect for zooming the image */
+.gallery-item:hover .gallery-image {
+  transform: scale(1.1); /* Zooms in the image */
+}
+
+/* Overlay for each image */
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Modal container */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal content for the image */
+.modal-content {
+  position: relative;
+  width: 500px; /* Fixed size for the popup image */
+  height: 500px; /* Fixed size for the popup image */
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.popup-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Close button for the popup */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  .modal-content {
+    width: 95%; /* Adjust width to 80% of the screen on small devices */
+    height: auto; /* Let height adjust dynamically */
+    max-height: 80%; /* Prevent the modal from being too tall */
+  }
+
+  .close-button {
+    font-size: 25px;
+    top: 5px;
+    right: 5px;
+  }
+}
+
