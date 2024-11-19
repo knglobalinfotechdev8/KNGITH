@@ -2,14 +2,15 @@ import React from 'react'
 import { motion } from "framer-motion";
 import { OurTeamCelebrate, OurTeamData, OurTeamImg } from '../../Constant'
 import { LampContainer } from '../../Components/ui/lamp'
-import TeamGallery from './TeamGallery';
+import Team from './Team';
+import TeamMob from './TeamMob';
 
 const OurTeam = () => {
   return (
     <>
     <LampContainer>
       <section>
-      <div className="flex flex-col items-center justify-center sm:pt-[15%] pt-[55%] w-full h-full p-6 sm:px-8 md:px-10 lg:px-12">
+      <div className="flex flex-col items-center justify-center sm:pt-[15%] pt-[55%] w-full h-full  sm:px-8 md:px-10 lg:px-12">
         <motion.h1
           initial={{ opacity: 0.5, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -47,7 +48,7 @@ const OurTeam = () => {
                     <br />
                 </div>
                 <div>
-                    <p className='text-justify indent-11'>{data.content}</p>
+                    <p className='text-justify indent-11 '>{data.content}</p>
                 </div>
             </div>
             </div>
@@ -74,29 +75,20 @@ const OurTeam = () => {
           </div>
         ))}
       </div>
-    </div> */} <TeamGallery/>
+    </div> */} 
       </div>
 
       <div>
-      <div className="gallery-container">
-      <h1 className="gallery-title text-white font-extrabold text-2xl">Team Celebrations</h1>
-      <div className="gallery-grid">
-        {OurTeamCelebrate.map((image, i) => (
-          <div className="gallery-item" key={i}>
-            <img
-              className="gallery-image"
-              src={image.img}
-              alt={image.alt || `Gallery Item ${i + 1}`}
-            />
-            <div className="image-overlay">
-              <h3 className="image-title">{image.title}</h3>
-              <p className="image-description">{image.description}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-      </div>
+  <div className="sm:p-[50px] text-center mt-[100px]">
+    <h1 className="gallery-title text-white font-extrabold text-2xl">Team Celebrations</h1>
+    <div className="gallery-grid overflow-y-auto max-h-[400px]">
+      <Team OurTeamCelebrate={OurTeamCelebrate}/>
+      <TeamMob OurTeamCelebrate={OurTeamCelebrate}/>
+</div>
+
+  </div>
+</div>
+
       </section>
       
     </LampContainer>

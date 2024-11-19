@@ -17,7 +17,7 @@ const WhatsAppButton = () => {
       }}
       className="fixed right-3 bottom-[10px] whatsapp z-10"
     >
-      <a href="https://wa.me/919500706954" target="_blank" rel="noopener noreferrer">
+      <a href="https://wa.me/919597886954" target="_blank" rel="noopener noreferrer">
       <LottieAnimation animationData={Whastappicon} ClassStyle={'w-[70px]'}/>
       </a>
     </motion.div>

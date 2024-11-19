@@ -308,10 +308,47 @@ export const OurTeamData = [
         img: MD,
         profession: "MANAGING DIRECTOR",
         name: "Aneesdeen",
-        content:
-            "Mr. Aneesdeen, armed with a Master of Science in Information Technology attained in 2007, embarked on his professional journey in 2008 as a software developer in the dynamic landscape of the Middle East. Over the years, he has seamlessly transitioned through various pivotal roles, including technical team leader, software team leader, and solution manager.With a wealth of experience spanning over a decade, Aneesdeen has honed his expertise in Enterprise Resource Planning (ERP) systems and Software Development Life Cycle (SDLC) methodologies across a diverse array of industries. His adeptness in navigating the intricacies of ERP implementation and management has contributed to the operational efficiency and growth of numerous organizations.In 2023, leveraging his extensive industry knowledge and visionary outlook, Aneesdeen embarked on a new chapter in his professional odyssey by founding KN GLOBAL INFO TECH, a testament to his entrepreneurial spirit and commitment to driving innovation in the technological sphere.As the Managing Director of KN GLOBAL INFO TECH, Aneesdeen brings forth a potent blend of leadership, technical prowess, and strategic acumen, steering the company towards unprecedented heights of success. Under his guidance, KN GLOBAL INFO TECH continues to thrive as a beacon of innovation, delivering cutting-edge solutions that empower businesses to transcend boundaries and achieve their full potential.",
+        content: (
+            <>
+                <span>
+                    &nbsp;&nbsp;&nbsp;Mr. Aneesdeen, armed with a Master of Science in Information Technology attained in 2007,
+                    embarked on his professional journey in 2008 as a software developer in the dynamic landscape
+                    of the Middle East.
+                </span>
+                <br />
+                <br />
+                <span>
+                    &nbsp;&nbsp;&nbsp;Over the years, he has seamlessly transitioned through various pivotal roles, including
+                    technical team leader, software team leader, and solution manager. With a wealth of experience
+                    spanning over a decade, Aneesdeen has honed his expertise in Enterprise Resource Planning
+                    (ERP) systems and Software Development Life Cycle (SDLC) methodologies across a diverse array
+                    of industries.
+                </span>
+                <br />
+                <br />
+                <span>
+                    &nbsp;&nbsp;&nbsp;His adeptness in navigating the intricacies of ERP implementation and management has
+                    contributed to the operational efficiency and growth of numerous organizations.
+                </span>
+                <br />
+                <br />
+                <span>
+                    &nbsp;&nbsp;&nbsp;In 2023, leveraging his extensive industry knowledge and visionary outlook, Aneesdeen embarked
+                    on a new chapter in his professional odyssey by founding KN GLOBAL INFO TECH, a testament to
+                    his entrepreneurial spirit and commitment to driving innovation in the technological sphere.
+                </span>
+                <br />
+                <br />
+                <span>
+                    &nbsp;&nbsp;&nbsp;Under his guidance, KN GLOBAL INFO TECH continues to thrive as a beacon of innovation,
+                    delivering cutting-edge solutions that empower businesses to transcend boundaries and achieve
+                    their full potential.
+                </span>
+            </>
+        ),
     },
 ];
+
 
 export const OurTeamImg = [
     {
