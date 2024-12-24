@@ -78,7 +78,7 @@ const OurTeam = () => {
     </div> */} 
       </div>
 
-      <div>
+      {/* <div>
   <div className="sm:p-[50px] text-center mt-[100px]">
     <h1 className="gallery-title text-white font-extrabold text-2xl">Team Celebrations</h1>
     <div className="gallery-grid overflow-y-auto max-h-[400px]">
@@ -87,7 +87,7 @@ const OurTeam = () => {
 </div>
 
   </div>
-</div>
+</div> */}
 
       </section>
       
